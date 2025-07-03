@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quiz Game - Score History</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="dark-theme">
+<button id="themeToggleButton">Switch to Light Theme</button>
+
+<header>
+    <h1>Score History</h1>
+</header>
+
+<main>
+    <div class="history-container">
+        <div class="stats-overview">
+            <h2>Your Statistics</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Total Quizzes</h3>
+                    <p id="totalQuizzes">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Average Score</h3>
+                    <p id="averageScore">0%</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Best Score</h3>
+                    <p id="bestScore">0%</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Quiz Mastery</h3>
+                    <p id="quizMastery">0/3</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="quiz-performance">
+            <h2>Quiz Performance</h2>
+            <div class="quiz-stats" id="quizStats">
+            </div>
+        </div>
+
+        <div class="recent-history">
+            <h2>Recent Attempts</h2>
+            <div class="history-list" id="historyList">
+            </div>
+        </div>
+
+        <div class="action-buttons">
+            <button class="Btn" id="clearHistoryBtn">Clear All History</button>
+            <button class="Btn" id="homeBtn">Back to Home</button>
+        </div>
+    </div>
+</main>
+
+<script src="../utils/storage.js"></script>
+<script src="../assets/js/history.js"></script>
+<script src="../assets/js/theme.js"></script>
+</body>
+</html>
