@@ -75,7 +75,7 @@ Quiz/
 
 ## 📸 Aperçu
 
-![Aperçu du quiz](assets/images/Capture d'écran 2025-07-03 094143.png) <!-- Remplacer par une vraie capture d'écran -->
+![Aperçu du quiz](assets/images/Captured'écran2025-07-03094143.png) <!-- Remplacer par une vraie capture d'écran -->
 
 ---
 
