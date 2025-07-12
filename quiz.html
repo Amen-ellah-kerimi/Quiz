@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quiz Game - Pixel Edition</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="dark-theme">
+<button id="themeToggleButton">Switch to Light Theme</button>
+<main>
+    <div id="quiz">
+        <h1 class="title" id="title"></h1>
+        
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <span class="progress-text" id="progressText">1/10</span>
+        </div>
+        
+        <h1 id="questionNumber"></h1>
+        <h1 id="question"></h1>
+        <br>
+        <div class="answers">
+            <h6 class="answer" id="A"></h6>
+            <h6 class="answer" id="B"></h6>
+            <h6 class="answer" id="C"></h6>
+            <h6 class="answer" id="D"></h6>
+        </div>
+    </div>
+    
+    <div id="results" style="display: none;">
+        <h1 class="title">Quiz Complete!</h1>
+        <div class="results-content">
+            <div class="score-display">
+                <h2 id="finalScore">Score: 0/10</h2>
+                <h3 id="percentage">0%</h3>
+                <div class="score-message" id="scoreMessage"></div>
+            </div>
+            <div class="stats">
+                <p>Correct Answers: <span id="correctCount">0</span></p>
+                <p>Wrong Answers: <span id="wrongCount">0</span></p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="button-container">
+        <button class="Btn" id="homeBtn">Home</button>
+        <button class="Btn" id="nextBtn">Next</button>
+        <button class="Btn" id="retryBtn" style="display: none;">Try Again</button>
+        <button class="Btn" id="historyBtn" style="display: none;">View History</button>
+    </div>
+</main>
+<script src="../utils/storage.js"></script>
+<script src="../assets/js/data.js"></script>
+<script src="../assets/js/quiz.js"></script>
+<script src="../assets/js/theme.js"></script>
+</body>
+</html>
